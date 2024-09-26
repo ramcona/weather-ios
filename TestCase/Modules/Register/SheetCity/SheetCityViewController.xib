@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SheetCityViewController" customModule="TestCase" customModuleProvider="target">
+            <connections>
+                <outlet property="tableViewData" destination="ybq-Cs-zcL" id="YXw-iA-kai"/>
+                <outlet property="textFieldSearch" destination="uh8-Nu-YPz" id="FoO-yM-vG1"/>
+                <outlet property="view" destination="GxL-ur-wuY" id="yuB-Lk-j54"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GxL-ur-wuY">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-6n-3YB">
+                    <rect key="frame" x="15" y="59" width="363" height="45"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cari" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-Nu-YPz">
+                            <rect key="frame" x="10" y="2" width="343" height="41"/>
+                            <color key="textColor" name="TextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="GreyOutline"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2JD-Ge-3Fu"/>
+                        <constraint firstItem="uh8-Nu-YPz" firstAttribute="top" secondItem="dJc-6n-3YB" secondAttribute="top" constant="2" id="2SB-gA-LDA"/>
+                        <constraint firstItem="uh8-Nu-YPz" firstAttribute="leading" secondItem="dJc-6n-3YB" secondAttribute="leading" constant="10" id="4pk-i9-oZ6"/>
+                        <constraint firstAttribute="trailing" secondItem="uh8-Nu-YPz" secondAttribute="trailing" constant="10" id="VHD-fa-ugW"/>
+                        <constraint firstAttribute="bottom" secondItem="uh8-Nu-YPz" secondAttribute="bottom" constant="2" id="X6b-Kh-KjC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-Cs-zcL">
+                    <rect key="frame" x="15" y="114" width="363" height="704"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Cxc-lO-nIg"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cxc-lO-nIg" firstAttribute="trailing" secondItem="ybq-Cs-zcL" secondAttribute="trailing" constant="15" id="2dM-ZV-nsH"/>
+                <constraint firstItem="Cxc-lO-nIg" firstAttribute="trailing" secondItem="dJc-6n-3YB" secondAttribute="trailing" constant="15" id="6cg-7b-QNJ"/>
+                <constraint firstItem="ybq-Cs-zcL" firstAttribute="leading" secondItem="Cxc-lO-nIg" secondAttribute="leading" constant="15" id="7Z5-jT-X6L"/>
+                <constraint firstItem="ybq-Cs-zcL" firstAttribute="top" secondItem="dJc-6n-3YB" secondAttribute="bottom" constant="10" id="A06-Qm-29E"/>
+                <constraint firstItem="ybq-Cs-zcL" firstAttribute="bottom" secondItem="Cxc-lO-nIg" secondAttribute="bottom" id="Bh9-X5-cf8"/>
+                <constraint firstItem="dJc-6n-3YB" firstAttribute="top" secondItem="Cxc-lO-nIg" secondAttribute="top" id="Rii-vI-GFb"/>
+                <constraint firstItem="dJc-6n-3YB" firstAttribute="leading" secondItem="Cxc-lO-nIg" secondAttribute="leading" constant="15" id="cBY-TH-ABD"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="GreyOutline">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcodeproj/xcuserdata
+*.xcodeproj/xcuserdata/*.xcuserdatad
+
+# Build generated files
+build/
+DerivedData/
+*.app
+*.ipa
+
+# User-specific files
+*.swp
+*.lock
+*.DS_Store
+*.user
+*.userprefs
+*.sublime-project
+*.sublime-workspace
+*.orig
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# Other
+*.hmap
+*.dSYM.zip
+*.dSYM
+*.tbd
+*.h
+*.m
+*.swiftmodule
+*.swiftdoc
+
+# macOS
+*.DS_Store
+
